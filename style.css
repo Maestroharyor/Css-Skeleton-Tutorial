@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4e620;
+  min-height: 100vh;
+  padding-bottom: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 0.3rem;
+  text-align: center;
+  position: sticky;
+  top: 0px;
+}
+
+.section1,
+.section2 {
+  display: grid;
+  gap: 3rem;
+  padding: 1rem 2rem;
+}
+
+.subheading {
+  text-align: center;
+  padding: 1.5rem 0.5rem 1rem 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Skeleton Styles */
+
+.custom_skeleton_loader {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.custom_skeleton_loader div {
+  background-color: rgba(20, 20, 20, 0.3);
+  border-radius: 4px;
+}
+
+.custom_skeleton_loader .banner {
+  padding: 5rem 0;
+}
+
+.custom_skeleton_loader .header {
+  padding: 15px 0;
+  max-width: 70%;
+}
+
+.custom_skeleton_loader .content {
+  padding: 8px 0;
+  max-width: 1000px;
+}
+
+/* Skeleton loading */
+.custom_skeleton_loader.animated div {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.3),
+    rgba(70, 70, 70, 0.24),
+    rgba(0, 0, 0, 0.3)
+  );
+  background-size: 400% 100%;
+  -webkit-animation: skeletonAnimation 1.4s ease infinite;
+  -moz-animation: skeletonAnimation 1.4s ease infinite;
+  animation: skeletonAnimation 1.4s ease infinite;
+}
+
+@keyframes skeletonAnimation {
+  0% {
+    background-position: 100% 50%;
+  }
+  to {
+    background-position: 0 50%;
+  }
+}
+
+/* Small devices (landscape phones, 640px and up) */
+@media (min-width: 640px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .section1,
+  .section2 {
+    grid-template-columns: auto auto;
+  }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+  .section1,
+  .section2 {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+/* XL-Large devices (large desktops, 1280px and up) */
+@media (min-width: 1280px) {
+}
+
+/* 2XL -Large devices (larger desktops, 1536px and up) */
+@media (min-width: 1536px) {
+}
